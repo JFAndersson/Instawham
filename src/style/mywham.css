@@ -1,0 +1,240 @@
+#mywham-container{
+    padding-top: 140px;
+}
+#mywham-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+#mywham-header img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+#mywham-header p{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+}
+#mywham-navigation-child{
+    display: flex;
+    flex-direction: column;
+}
+#mywham-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 50px;
+}
+#mywham-navigation div{
+    cursor: pointer;
+}
+.mywham-parent{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 15px;
+    padding-bottom: 100px;
+}
+
+/*My posts*/
+
+.myposts-post-container{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    height: 350px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.post-thumbnail{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.postHoverFilter{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+}
+.post-preview-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+.filterHeader{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 0;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    color: white;
+}
+.post-preview-child-container{
+    display: flex;
+    flex-direction: column;
+}
+.post-preview-child-container span{
+    color: white;
+    font-size: 17px;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+.delete-icon{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+.postReferenceDeletion{
+    font-style: italic;
+}
+#post-deletion-modal{
+    width: 400px;
+    padding: 20px;
+}
+#post-deletion-modal h1{
+    font-size: 25px;
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+}
+#post-deletion-btns button{
+    width: 170px;
+}
+
+/*My comments*/
+
+.mycomments-comment-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 50px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.mycomments-comment-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 1;
+}
+.mycomments-filter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+.mycomments-data{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    z-index: 3;
+}
+.mycomments-data span{
+    color: white;
+}
+.mycomments-data span:first-child{
+    font-size: 12px;
+    font-style: italic;
+}
+.mycomments-data span:last-child{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*My tags*/
+
+.mytags-tag-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 50px;
+    border-radius: 10px;
+    padding: 15px;
+    background: linear-gradient(30deg, #272727, #555557);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.mytags-data{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 15px;
+}
+.mytags-data span{
+    color: white;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 600;
+}
+.mytags-data span:last-child{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+.tag-deletion{
+    top: 50%;
+    right: 15px;
+    bottom: unset;
+    transform: translateY(-50%);
+}
+
+#tag-deletion-modal{
+    width: 400px;
+    padding: 20px;
+}
+#tag-deletion-modal h1{
+    font-size: 25px;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+#tag-deletion-modal p{
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+
+

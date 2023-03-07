@@ -1,0 +1,292 @@
+#stream-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.session-indicator{
+    padding-top: 35px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-style: italic;
+}
+.session-indicator.invisible{
+    visibility: hidden;
+    padding: 0 0 25px;
+    margin: 0;
+}
+
+#post-container-wrap{
+    width: 100%;
+}
+.post-container{
+    width: 500px;
+    margin: auto;
+}
+.post-reference{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.post-reference-author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.post-reference-author p:first-child{
+    margin-right: 10px;
+}
+.post-reference-author p:last-child{
+    margin-left: 10px;
+}
+.post-image{
+    width: 500px;
+    height: 600px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.post-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+}
+.post-header h1{
+    font-size: 30px;
+    max-width: 400px;
+}
+.post-body{
+    margin-top: 0 !important;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+.tags{
+    font-size: 13px;
+    font-style: italic;
+}
+.bold-tag{
+    font-weight: bold;
+}
+.comment-thread{
+    padding: 10px 10px 0 10px;
+    border: 2px dotted rgb(236, 231, 226);
+    border-radius: 10px;
+}
+.sendMessage-icon{
+    width: 15px;
+    height: 15px;
+    padding-right: 7px;
+}
+.comments-btn{
+    margin: 11px 0 16px;
+    width: 100%;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: rgb(142, 137, 137);
+}
+.comment-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    padding-bottom: 5px;
+}
+.comment-container:last-child{
+    padding-bottom: 10px;
+}
+.comment-author{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 7px;
+    background-color: white;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    width: 100%;
+}
+.comment-container button{
+    background-color: white;
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    font-weight: bold;
+    width: 30px;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+}
+.comment-container button:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.comment-pfp-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    margin-top: 2px;
+}
+.pfpImage{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.comment-text{
+    font-size: 14px;
+}
+.comment-author-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.author-comment-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1px;
+}
+.message-status-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 13px;
+    font-style: italic;
+}
+.comment-time{
+    padding-right: 5px;
+}
+.comment-likenum{
+    padding-right: 10px;
+}
+.comment-nickname{
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#interaction-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#interaction-container p{
+    font-size: 20px;
+}
+
+/*Like btn*/
+.likeBtnWrapper{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.likeBtnWrapper img{
+    margin-top: 3px;
+}
+.likeBtn{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.likeMsgBtn-container{
+    display: flex;
+    align-items: center;
+}
+.likeMsgBtn{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/*Delete message btn*/
+.deleteMsg-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.deleteMsgBtn{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/*Action Button */
+.actionBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: 8px 10px;
+    text-align: center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    cursor: pointer;
+    touch-action: manipulation;
+    transition: 200ms ease-in-out;
+}
+.actionBtn:hover {
+    background-color: rgb(185, 226, 207);
+}
+.actionBtn:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+.actionBtn:focus-visible {
+    box-shadow: none;
+}
+.actionBtn.liked{
+    background-color: #e67474;
+    color: #f4f7fd;
+}
+
+/*Create message*/
+.create-message-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.create-message-container span{
+    font-style: italic;
+}
+.cm-child-container{
+    display: flex;
+    flex-direction: row;
+}
+.textbox-container{
+    margin-bottom: 10px;
+}
+.textbox-container textarea{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 50px;
+    resize: vertical;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.sendMessageBtn{
+    margin-left: 10px;
+}
+.sendMessageBtn:hover{
+    background-color: rgb(185, 226, 207);
+}
+.discardMessageBtn:hover{
+    background-color: rgb(223, 175, 175);
+}

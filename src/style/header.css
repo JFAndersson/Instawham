@@ -1,0 +1,245 @@
+
+#wham-header{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    padding-top: 140px;
+}
+#wham-header p{
+    font-size: 30px;
+    text-align: center;
+    padding: 0 50px;
+    margin-top: 0;
+}
+#header-span{
+    font-weight: bold;
+}
+#action-grid{
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
+}
+.grid-item button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.actionBtn-icon{
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+.streamNav-parent{
+    margin-top: 50px;
+}
+.streamNav-container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.streamNav-container div{
+    cursor: pointer;
+}
+.clicked-stream{
+    font-weight: bold;
+}
+.add_streamTag-container{
+    margin-top: 2px;
+}
+
+.header-modal{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: auto !important;
+    width: 400px;
+    height: auto;
+    padding: 10px 0 30px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 10px;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+.input-file-container{
+    position: relative;
+}
+.inputFile{
+    cursor: pointer;
+    height: 100px;
+    width: 100%;
+}
+.cpm-input-container{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    padding: 0 0 20px;
+}
+.header-modal button{
+    cursor: pointer;
+}
+.cpm-input-container select{
+    padding: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    border: none;
+    z-index: 10;
+}
+
+#uploadTagBtn.disabled{
+    opacity: 0.3;
+    cursor: auto;
+}
+#uploadTagBtn.disabled:hover{
+    background-color: white;
+    box-shadow: none;
+}
+#uploadPostBtn.disabled{
+    opacity: 0.3;
+    cursor: auto;
+}
+#uploadPostBtn.disabled:hover{
+    background-color: white;
+    box-shadow: none;
+}
+.cpm-input-container input[type=file] {
+    position: relative;
+    color: #a0a0a0;
+    text-align: center;
+    font-size: 10px;
+    z-index: 10;
+}
+.cpm-input-container input[type=file]::file-selector-button {
+    position: absolute; /* Position the div absolutely */
+    top: 50%; /* Move the top of the div to the center vertically */
+    left: 50%; /* Move the left of the div to the center horizontally */
+    transform: translate(-50%, -50%); /* Use transform to offset the div by half its own width and height */
+    border: none;
+    background: #ffffff;
+    border: 2px dotted rgb(224, 224, 224);
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.cpm-input-container input{
+    margin: 0 0 10px;
+    padding: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    border: none;
+    z-index: 10;
+}
+.inputTag{
+    margin: 0 !important;
+}
+.inputTag.tagError{
+    color: rgb(220, 71, 57);
+}
+.cpm-input-container textarea{
+    margin: 0 0 10px;
+    max-height: 500px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-sizing: border-box;
+    min-height: 50px;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    resize: vertical;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    z-index: 10;
+}
+.cpm-btn-container{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    gap: 10px;
+}
+.cpm-btn-container button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 40px;
+    border-radius: 8px;
+    padding-bottom: 0;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: 200ms all ease-in-out;
+    z-index: 10;
+}
+.createPost-icon{
+    width: 15px;
+    height: 15px;
+    padding-right: 8px;
+}
+.cpm-btn-container button:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.cpm-btn-container button:first-child:hover{
+    background-color: rgb(223, 175, 175);
+}
+.cpm-btn-container button:last-child:hover{
+    background-color: rgb(185, 226, 207);
+}
+
+/* Action Buttons */
+.action-header-button {
+  background-color: #353535;
+  border-radius: 8px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: rgb(243, 241, 247);
+  cursor: pointer;
+  font-family: expo-brand-demi,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 18px;
+  height: 52px;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 20px;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  vertical-align: baseline;
+  white-space: nowrap;
+  touch-action: manipulation;
+  transition: all 200ms ease-in-out;
+}
+.action-header-button:hover {
+    background-color: #1f1e1e;
+}
+.action-header-button:active {
+    outline: 0;
+}
+.action-header-button:focus {
+    box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+}
+#hide-streams-btn{
+    background-color: rgb(110, 87, 87);
+}
+#hide-streams-btn:hover{
+    background-color: rgb(66, 72, 77);
+}
