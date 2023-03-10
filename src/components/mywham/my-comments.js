@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import formatTimestamp from "../scope/format-timestamp";
 import { v4 } from "uuid";
-import notFoundPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/not_found.png';
+import notFoundPng from '../../imgs/not_found.png';
 
 function PrintAuthorComments(props){
 

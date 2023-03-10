@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import GetPostLikesNum from './getPostLikes';
-import heartPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/heart.png';
-import heartFilledPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/heart_filled.png';
+import heartPng from '../../../imgs/heart.png';
+import heartFilledPng from '../../../imgs/heart_filled.png';
 
 function PostLikeFramework(props) {
 

@@ -1,4 +1,4 @@
-import deletePng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/delete.png';
+import deletePng from '../../../imgs/delete.png';
 
 function DeleteMessage(props){
     

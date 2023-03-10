@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import CreatePostModal from './create-post';
-import createPostPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/create_post.png';
-import hideCustomPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/hide_custom.png';
-import showCustomPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/show_custom.png';
+import createPostPng from '../../imgs/create_post.png';
+import hideCustomPng from '../../imgs/hide_custom.png';
+import showCustomPng from '../../imgs/show_custom.png';
 
 function TopButtons(props){
 

@@ -14,7 +14,6 @@ import WhamHeader from './components/header/header';
 import WhamNav from './components/navs/nav'
 import UserWham from './components/mywham/mywham';
 
-
 // Importing functions from the SDKs
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/storage';
@@ -40,15 +39,13 @@ const auth = firebase.auth();
 const storage = firebase.storage();
 const firestore = firebase.firestore();
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
 function App(){
 
   const [user] = useAuthState(auth);
   const [authorId, setAuthorId] = useState(null);
 
   const [myWhamClicked, setMyWhamClicked] = useState(false);
-  const [currentStream, setCurrentStream] = useState('');
+  const [currentStream, setCurrentStream] = useState('Recents');
 
   const [streams, setStreams] = useState([]);
   const [customStreams, setCustomStreams] = useState([])
@@ -66,28 +63,66 @@ function App(){
           });
           setStreams(streams);
           setCustomStreams(customStreams);
-          setCurrentStream('Recents');
       });
   }, []);
 
   function SelectedComponent(){
     if (myWhamClicked){
-      return <UserWham firestore={firestore} authorId={authorId} />
+      return (
+        <UserWham 
+          firestore={firestore} 
+          authorId={authorId} 
+        />
+      )
     }
     else{
-      return <PostStream auth={auth} authorId={authorId} setAuthorId={setAuthorId} firebase={firebase} firestore={firestore} currentStream={currentStream} />
+      return (
+        <PostStream 
+          auth={auth} 
+          authorId={authorId} 
+          setAuthorId={setAuthorId} 
+          firebase={firebase} 
+          firestore={firestore} 
+          currentStream={currentStream} 
+        />
+      )
     }
   }
 
   return (
     <div id="wham-dom">
       <div id='dom-filter'></div>
-      {user && <WhamNav auth={auth} myWhamClicked={myWhamClicked} setMyWhamClicked={setMyWhamClicked} />}
-      {user && !myWhamClicked && <WhamHeader firestore={firestore} storage={storage} auth={auth} streams={streams} customStreams={customStreams} currentStream={currentStream} setCurrentStream={setCurrentStream} authorId={authorId} />}
-      {user ? <SelectedComponent /> : <SignIn auth={auth} firebase={firebase} firestore={firestore} />}
+      {user && (
+        <WhamNav 
+          auth={auth} 
+          myWhamClicked={myWhamClicked} 
+          setMyWhamClicked={setMyWhamClicked} 
+        />
+      )}
+      {user && !myWhamClicked && (
+        <WhamHeader 
+          firestore={firestore} 
+          storage={storage} 
+          auth={auth} 
+          streams={streams} 
+          customStreams={customStreams} 
+          currentStream={currentStream} 
+          setCurrentStream={setCurrentStream} 
+          authorId={authorId} 
+        />
+      )}
+      {user ? <SelectedComponent /> : (
+        <SignIn 
+          auth={auth} 
+          firebase={firebase} 
+          firestore={firestore} 
+        />
+      )}
     </div>
   );
 }
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <App />

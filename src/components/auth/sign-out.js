@@ -1,4 +1,4 @@
-import signOutPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/signout.png';
+import signOutPng from '../../imgs/signout.png';
 
 function SignOut(props) {
   return props.auth.currentUser && (

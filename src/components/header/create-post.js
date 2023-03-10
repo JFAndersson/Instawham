@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { v4 } from 'uuid';
-import discardPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/discard.png';
-import sendObjectPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/send_object.png';
+import discardPng from '../../imgs/discard.png';
+import sendObjectPng from '../../imgs/send_object.png';
 
 function CreatePostModal(props) {
 

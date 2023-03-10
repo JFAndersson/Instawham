@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { v4 } from 'uuid';
-import discardPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/discard.png';
-import sendObjectPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/send_object.png';
-import deleteWhitePng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/delete_white.png';
-import notFoundPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/not_found.png';
+import discardPng from '../../imgs/discard.png';
+import sendObjectPng from '../../imgs/send_object.png';
+import deleteWhitePng from '../../imgs/delete_white.png';
+import notFoundPng from '../../imgs/not_found.png';
 
 function PrintAuthorTags(props){
 

@@ -7,7 +7,7 @@ import updatePostLikeCount from './onLoad/updPostLikeCount';
 import MessageThread from './messageThread/messageThread';
 import PostLikeFramework from './postLikes/postLikes';
 
-import notFoundPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/not_found.png';
+import notFoundPng from '../../imgs/not_found.png';
 
 function PostStream(props) {
 

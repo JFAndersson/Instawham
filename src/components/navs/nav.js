@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import SignOut from '../auth/sign-out';
-import streamPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/stream.png';
-import streamFilledPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/stream_filled.png'
-import myWhamPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/mywham.png';
-import myWhamFilledPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/mywham_filled.png'
+import streamPng from '../../imgs/stream.png';
+import streamFilledPng from '../../imgs/stream_filled.png'
+import myWhamPng from '../../imgs/mywham.png';
+import myWhamFilledPng from '../../imgs/mywham_filled.png'
 
 function WhamNav(props){
 

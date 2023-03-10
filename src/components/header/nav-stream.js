@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import CreateTagModal from './create-tag';
 import { v4 } from 'uuid';
-import addCustomPng from '/Users/Fhage/OneDrive/Programmering/Frontend/Instawham/wham-app/src/imgs/add_custom.png';
+import addCustomPng from '../../imgs/add_custom.png';
 
 function StreamNav(props){
 
